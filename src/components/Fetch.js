@@ -10,7 +10,7 @@ const TokenDataFetcher = () => {
   const [recipientAddress, setRecipientAddress] = useState('');
   const [amountToSend, setAmountToSend] = useState('');
   const [contractAddress,setcontractAddress]=useState('');
-//   const contractAddress = '0x326C977E6efc84E512bB9C30f76E30c160eD06FB';
+
   const provider = new ethers.providers.Web3Provider(window.ethereum);
 
   // Create a new instance of the ERC20 token contract

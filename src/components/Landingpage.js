@@ -1,6 +1,4 @@
 import React from 'react'
-import adglogo from './ADG_Logo.png';
-import ieelogo from './IEEE.png';
 import devolution from './logo.png';
 
 function Landingpage() {
