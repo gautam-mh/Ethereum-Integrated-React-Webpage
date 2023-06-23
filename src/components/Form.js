@@ -350,14 +350,14 @@ const ABI=[
 	}
 ]
 function Form() {
-    const [tokenName, setTokenName] = useState('');
-  const [tokenSymbol, setTokenSymbol] = useState('');
-  const [totalSupply, setTotalSupply] = useState('');
-  const [urBalance, seturBalance] = useState('');
-  const [connectedWallet, setConnectedWallet] = useState('');
-  const [recipientAddress, setRecipientAddress] = useState('');
-  const [amountToSend, setAmountToSend] = useState('');
-  const [contractAddress, setcontractAddress] = useState('');
+	const [tokenName, setTokenName] = useState('');
+  	const [tokenSymbol, setTokenSymbol] = useState('');
+  	const [totalSupply, setTotalSupply] = useState('');
+ 	const [urBalance, seturBalance] = useState('');
+  	const [connectedWallet, setConnectedWallet] = useState('');
+  	const [recipientAddress, setRecipientAddress] = useState('');
+  	const [amountToSend, setAmountToSend] = useState('');
+  	const [contractAddress, setcontractAddress] = useState('');
 
     const provider=new ethers.providers.Web3Provider(window.ethereum);
     const tokenContract=new ethers.Contract(contractAddress,ABI,provider.getSigner());
@@ -390,9 +390,9 @@ function Form() {
             setTokenSymbol(symbol);
 
             const totalSupply=await tokenContract.totalSupply();
-            setTotalSupply(totalSupply);
+            setTotalSupply(totalSupply.toString());
 
-            const address=await provider.getsigner().getAddress();
+            const address=await provider.getSigner().getAddress();
             setConnectedWallet(address);
 
             const balance=await tokenContract.balanceOf(address);

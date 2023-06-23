@@ -41,22 +41,6 @@ li{
   justify-content: center;
   align-items: center;
 }
-.logo{
-  display: flex;
-  width: 90vw;
-  justify-content: center;
-  align-items: center;
-}
-.x1 img{
-  width: 20vw;
-}
-.x2 p{
-  font-size: 40px;
-  font-weight: 500;
-}
-.x3 img{
-  width: 16vw;
-}
 .dev{
   width: 90vw;
   display: flex;
